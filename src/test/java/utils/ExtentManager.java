@@ -15,7 +15,7 @@ public class ExtentManager {
         // Setup reporter
         ExtentSparkReporter spark = new ExtentSparkReporter("target/extent-report.html");
         spark.config().setEncoding("UTF-8");
-        spark.config().setTheme(Theme.DARK);
+        spark.config().setTheme(Theme.STANDARD);
         spark.config().setDocumentTitle("API Test Report");
         spark.config().setReportName("Cucumber API Test Execution");
 

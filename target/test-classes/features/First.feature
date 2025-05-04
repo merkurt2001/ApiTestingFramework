@@ -6,5 +6,5 @@ Feature: this is first feature
 
 
 
-  Scenario: Test1 GET API endpoint
-    Given I test the API
+  Scenario: what are you doing
+    Given I test the API2

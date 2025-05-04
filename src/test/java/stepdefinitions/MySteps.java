@@ -18,4 +18,15 @@ public class MySteps {
         Response response = RequestHelper.performGet(baseUri, basePath);
         ApiContext.setResponse(response); // ✅ Correct usage
     }
+
+    @Given("I test the API2")
+    public void i_test_the_api2() {
+        ScenarioContext.setCurrentStepName("Given I test the API2");
+
+        String baseUri = "https://jsonplaceholder.typicode.com";
+        String basePath = "/posts/1";
+
+        Response response = RequestHelper.performGet(baseUri, basePath);
+        ApiContext.setResponse(response); // ✅ Correct usage
+    }
 }
